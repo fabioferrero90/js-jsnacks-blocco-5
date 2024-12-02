@@ -22,6 +22,11 @@ zucchine.forEach(zucchina => {
     zucchineCorte.push(zucchina)
   }
 });
-
 console.log(zucchineCorte)
 console.log(zucchineLunghe)
+
+// Con metodo filter
+const zucchineLungheFilter = zucchine.filter(({ length }) => length >= 15)
+const zucchineCorteFilter = zucchine.filter(({ length }) => length < 15)
+console.log(zucchineCorteFilter)
+console.log(zucchineLungheFilter)
