@@ -15,13 +15,7 @@ const zucchine = [
 const zucchineLunghe = []
 const zucchineCorte = []
 
-zucchine.forEach(zucchina => {
-  if (zucchina.length >= 15) {
-    zucchineLunghe.push(zucchina);
-  } else {
-    zucchineCorte.push(zucchina)
-  }
-});
+zucchine.forEach(zucchina => (zucchina.length >= 15 ? zucchineLunghe : zucchineCorte).push(zucchina))
 console.log(zucchineCorte)
 console.log(zucchineLunghe)
 
